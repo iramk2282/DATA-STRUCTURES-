@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[5] = {10, 20, 30, 40, 50};   // array of 5 integers
+    int *ptr = arr;                    // pointer pointing to the array
+
+    // iterate through the array using pointer
+    for (int i = 0; i < 5; i++) {
+        cout << *(ptr + i) << endl;
+    }
+
+    return 0;
+}
