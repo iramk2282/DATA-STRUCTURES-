@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {10, 20, 30};
+    int size = 3;
+    int key, index, newValue;
+
+    // Linear Search
+    cout << "Enter element to search: ";
+    cin >> key;
+
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == key) {
+            cout << "Element found at index: " << i << endl;
+            break;
+        }
+    }
+
+    // Update value at given index
+    cout << "Enter index to update: ";
+    cin >> index;
+
+    cout << "Enter new value: ";
+    cin >> newValue;
+
+    if (index >= 0 && index < size) {
+        arr[index] = newValue;
+    }
+
+    // Display updated array
+    cout << "Updated Array: ";
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
